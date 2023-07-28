@@ -1,0 +1,148 @@
+html, body{
+    scroll-behavior: smooth;
+    transition: 0.5;
+    overflow-x: hidden;
+}
+
+nav, footer {
+    background-color: rgb(14, 18, 73) !important;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* 1er Parallax*/
+#parallax1 h5 {
+    color: rgb(255, 255, 255);
+    font-size: 25pt;
+}
+
+#parallax1 h1 {
+    color: #ffd20a;
+    font-size: 80pt;
+    font-family: 'Playfair Display', Times, serif;
+}
+
+#parallax1 a{
+    background-color: #ffffff;
+    color: #1a004e;
+    
+}
+
+#contact {
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+ol {
+    counter-reset:li; /* Initiate a counter */
+    margin-left:0; /* Remove the default left margin */
+    padding-left:0; /* Remove the default left padding */
+}
+ol > li {
+    position:relative; /* Create a positioning context */
+    margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
+    padding:4px 8px; /* Add some spacing around the content */
+    list-style:none; /* Disable the normal item numbering */
+    border-top:2px solid #f0bf0c;
+    background:#f6f6f6;
+}
+ol > li:before {
+    content:counter(li); /* Use the counter as content */
+    counter-increment:li; /* Increment the counter by 1 */
+    /* Position and style the number */
+    position:absolute;
+    top:-2px;
+    left:-2em;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    width:2em;
+    /* Some space between the number and the content in browsers that support
+       generated content but not positioning it (Camino 2 is one example) */
+    margin-right:8px;
+    padding:4px;
+    border-top:2px solid #f0bf0c;
+    color:#fff;
+    background:#f0bf0c;
+    font-weight:bold;
+    font-family:"Helvetica Neue", Arial, sans-serif;
+    text-align:center;
+}
+li ol,
+li ul {margin-top:6px;}
+ol ol li:last-child {margin-bottom:0;}
+
+#parallax1 img{
+    filter: brightness(0.7);
+}
+
+h2, h3 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Iconos */
+.icon-block {
+    padding: 0 20px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+#contact button{
+    display: table;
+    margin: 0 auto;
+}
+
+
+/* CSS para el color del formulario cuando seleccionado */
+
+
+/* label color */
+.input-field label {
+    color: rgb(14, 18, 73);
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: rgb(14, 18, 73);
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid rgb(14, 18, 73);
+    box-shadow: 0 1px 0 0 rgb(14, 18, 73);
+}
+/* valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid rgb(14, 18, 73);
+    box-shadow: 0 1px 0 0 rgb(14, 18, 73);
+}
+  /* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid rgb(14, 18, 73);
+    box-shadow: 0 1px 0 0 rgb(14, 18, 73);
+}
+  /* icon prefix focus color */
+.input-field .prefix.active {
+    color: rgb(14, 18, 73);
+}
+
+/* label focus color */
+.input-field input:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+    color: rgb(14, 18, 73) !important;
+  }
+/* label underline focus color */
+.row .input-field input:focus, .materialize-textarea:focus:not([readonly]){
+    border-bottom: 1px solid rgb(14, 18, 73) !important;
+    box-shadow: 0 1px 0 0 rgb(14, 18, 73) !important
+  }
